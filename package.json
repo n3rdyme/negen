@@ -1,0 +1,36 @@
+{
+	"name": "negen",
+	"version": "0.3.2",
+	"description": "Component file generation based on anygen",
+	"main": "dist/lib/negen.js",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:now-ims/any-generator.git"
+	},
+	"keywords": [
+		"generation",
+		"generator",
+		"component",
+		"scallfolding",
+		"file",
+		"cli"
+	],
+	"author": "NowIMS, original by Ma-Jerez",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/now-ims/any-generator/issues"
+	},
+	"homepage": "https://github.com/now-ims/any-generator#readme",
+	"bin": {
+		"negen": "bin/negen.js"
+	},
+	"scripts": {
+		"prerelease": "npm version patch",
+		"release": "npm publish -tag latest --access public"
+	},
+	"dependencies": {
+		"fs-extra": "^8.1.0",
+		"yargonaut": "^1.1.4",
+		"yargs": "^15.1.0"
+	}
+}
