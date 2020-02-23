@@ -50,6 +50,9 @@ function replaceAll(target, search, replacement) {
     result = result.replace(/__snake_name__/gi, function(val) {
       return toSnakeCase(replacement);
     });
+    result = result.replace(/__kebab-name__/gi, function(val) {
+      return toKebabCase(replacement);
+    });
   }
   return result;
 }

@@ -129,9 +129,11 @@ var Builder = (function() {
         pascalName: util.toPascalCase(moduleName),
         camelName: util.toCamelCase(moduleName),
         snakeName: util.toSnakeCase(moduleName),
+        kebabName: util.toKebabCase(moduleName),
         pascalPath: util.toPascalCase(modulePath),
         camelPath: util.toCamelCase(modulePath),
         snakePath: util.toSnakeCase(modulePath),
+        kebabPath: util.toKebabCase(modulePath),
         generated: generatedList
       };
       child_process.execFileSync(
@@ -186,6 +188,9 @@ var Builder = (function() {
     });
     destpath = destpath.replace(/__snake_path__/gi, function(val) {
       return util.toSnakeCase(modulePath);
+    });
+    destpath = destpath.replace(/__kebab-path__/gi, function(val) {
+      return util.toKebabCase(modulePath);
     });
     destpath = destpath.replace(/\.\//g, "");
     return destpath;

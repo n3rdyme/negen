@@ -63,8 +63,8 @@ A blueprint is any direct `">"` subdirectory of your `blueprints_root` directory
 **The `__name__` string:**  
 Any `__name__` string in a directory or file name will be replaced by the `new_module_name` when the build process is executed.  
 Any `__name__` string withing the content of the Blueprint files also will be replaced by the `new_module_name`.
-Likewise, any `__PascalName__` string is replaced with the PascalCase or `__camelName__` for camelCase, or `__snake_name__` for snake_case.
-
+Likewise, any `__PascalName__` string is replaced with the PascalCase, `__camelName__` for camelCase, `__snake_name__` for snake_case, or `__kebab-name__` for kebab-case.
+Additionally, you can have nested items using the `path` portion of a generated name. for example `SomePath/NameToGenerate` would produce `SomePath` as the replacement value for `__PascalPath__` (or any other supported case).
 
 ## License
 
