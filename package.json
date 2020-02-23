@@ -2,10 +2,10 @@
 	"name": "negen",
 	"version": "0.3.2",
 	"description": "Component file generation based on anygen",
-	"main": "dist/lib/negen.js",
+	"main": "src/negen.js",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:now-ims/any-generator.git"
+		"url": "git@github.com:n3rdyme/negen.git"
 	},
 	"keywords": [
 		"generation",
@@ -15,12 +15,12 @@
 		"file",
 		"cli"
 	],
-	"author": "NowIMS, original by Ma-Jerez",
+	"author": "n3rdy.me - original by Ma-Jerez",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/now-ims/any-generator/issues"
+		"url": "https://github.com/n3rdyme/negen/issues"
 	},
-	"homepage": "https://github.com/now-ims/any-generator#readme",
+	"homepage": "https://github.com/n3rdyme/negen#readme",
 	"bin": {
 		"negen": "bin/negen.js"
 	},

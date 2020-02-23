@@ -72,8 +72,8 @@ Likewise, any `__PascalName__` string is replaced with the PascalCase or `__came
 
 Authors:
 
-Origianl `anygen` from [@Ma Jerez](https://github.com/M-jerez/any-generator)
+Origianl `anygen` from [@Ma Jerez]
+https://github.com/M-jerez/any-generator
 
-
-Now IMS
-https://github.com/now-ims/
+n3rdy.me
+https://github.com/n3rdyme
